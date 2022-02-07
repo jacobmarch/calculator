@@ -1,0 +1,35 @@
+.container {
+    width: 40%;
+    min-width: 400px;
+    height: 80vh;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 140px;
+    grid-template-areas: "display display display"
+                         "buttons buttons operators"
+                         "buttons buttons operators";
+}
+.display{
+    grid-area: display;
+    box-shadow: 0 5px 5px -5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 2rem;
+}
+.grid {
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 5px 0px 5px -7px black;
+}
+
+.button {   
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 5px 0px 5px -7px black;
+}
